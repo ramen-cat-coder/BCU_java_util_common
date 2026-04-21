@@ -221,7 +221,7 @@ public class CommonStatic {
 
 		void setSE(int mus);
 
-		void setSE(Identifier<Music> mus);
+		void setSE(Identifier<Music> mus, boolean isCustomSound);
 
 		void setBGM(Identifier<Music> mus);
 	}
@@ -586,8 +586,8 @@ public class CommonStatic {
 	/**
 	 * play sound effect with identifier
 	 */
-	public static void setSE(Identifier<Music> mus) {
-		def.setSE(mus);
+	public static void setSE(Identifier<Music> mus, boolean isCustomSound) {
+		def.setSE(mus, isCustomSound);
 	}
 
 	/**
